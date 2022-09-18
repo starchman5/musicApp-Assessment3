@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".songCard">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/songItem"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="15sp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/albumArtwork"
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="10sp"
+                android:src="@android:drawable/arrow_up_float" />
+
+            <TextView
+                android:id="@+id/songPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="false"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="0sp"
+                android:text="$1.29 USD" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/albumArtwork"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_toStartOf="@+id/songPrice"
+                android:layout_toEndOf="@+id/albumArtwork"
+                android:text="Placeholder Title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/songArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="20sp"
+                android:layout_toStartOf="@+id/songPrice"
+                android:layout_toEndOf="@+id/albumArtwork"
+                android:text="Placeholder Artist" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
